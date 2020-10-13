@@ -1,0 +1,24 @@
+{
+  "name": "safe-chalk",
+  "version": "1.0.0",
+  "description": "Wrapper for chalk package with easy enable/disable option.",
+  "author": "DavidWells",
+  "license": "MIT",
+  "main": "src",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync-types": "cpy node_modules/chalk/index.d.ts ../safe-chalk",
+    "preversion": "npm run sync-types",
+    "publish": "git push origin && git push origin --tags",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish"
+  },
+  "files": [
+    "src",
+    "index.d.ts"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}
