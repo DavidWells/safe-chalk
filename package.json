@@ -1,6 +1,6 @@
 {
   "name": "safe-chalk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wrapper for chalk package with easy enable/disable option.",
   "author": "DavidWells",
   "license": "MIT",
